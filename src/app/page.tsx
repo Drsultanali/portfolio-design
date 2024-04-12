@@ -1,113 +1,76 @@
+import React from "react";
 import Image from "next/image";
+import Nav from "./components/navbar/navbar";
+import Maincard from "./components/mainCard/mainCard";
+import About from "./components/about/aboutCard";
+import Services from "./components/service/serviceCard";
+import MyPortfolio, { Portfolio } from "./components/myportfolio/portfolio";
+import CoreSkills from "./components/coreskills/coreSkills";
+import Testimonials from "./components/testimonials/testimonial";
+import Design, { DesignInsp } from "./components/designInspriration/dInspire";
+import GetInTouch from "./components/getInTouch/getInTouch";
+import Footer from "./components/footer/footer";
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main className="">
+      <div id="home">
+        <Nav />
+      </div>
+      <div className="bg-[#FFD4D0]">
+        <Maincard />
+      </div>
+      <div id='about' className="bg-[#1F1F1F]">
+        <About />
+      </div>
+      <div id="services">
+        <Services />
+      </div>
+      <div id="portfolio" className="bg-[#FFD4D0]">
+        <Portfolio />
+      </div>
+      <div className="bg-[#F7F7F7]">
+        <div className="relative flex justify-evenly flex-wrap gap-10 mx-10">
+          <MyPortfolio imageSrc="/portfolio/port1.png" text="Port01" h2="Educational Platform" parapgraph="Web Design / Usability Testing" imgSrc="/portfolio/send.png" />
+          <MyPortfolio imageSrc="/portfolio/port2.png" text="Port02" h2="Travel App Design" parapgraph="UX Research / App Design " imgSrc="/portfolio/send.png" />
+          <MyPortfolio imageSrc="/portfolio/port3.png" text="Port03" h2="Personal Page" parapgraph="Web Design " imgSrc="/portfolio/send.png" />
+          <MyPortfolio imageSrc="/portfolio/port4.png" text="Port04" h2="Furniture Mobile App" parapgraph="App Design " imgSrc="/portfolio/send.png" />
+          <MyPortfolio imageSrc="/portfolio/port5.png" text="Port05" h2="Coffee House Landing Page" parapgraph="UX Research / Web Design " imgSrc="/portfolio/send.png" />
+          <MyPortfolio imageSrc="/portfolio/port6.png" text="Port06" h2="Home Services Page" parapgraph="Web Design / Marketing" imgSrc="/portfolio/send.png" />
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <div className="bg-[#F7F7F7]">
+        <CoreSkills />
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      <div>
+        <Testimonials />
       </div>
+      <div id="blog">
+        <DesignInsp />
+      </div>
+      <div className="bg-[#F7F7F7]">
+
+
+<div className="flex justify-evenly flex-wrap gap-x-5 mx-10">
+<Design imgSrc="/designInspire/desInspire01.png" alt="design01" date="August 15, 2023 / UX" h1="Typography Tips for Design Success" 
+text="Dive into the world of web typography and discover how to choose, pair, and optimize fonts for compelling and readable digital designs."/>
+
+<Design imgSrc="/designInspire/desInspire02.png" alt="design02" date="August 15, 2023 / UX" h1="Color Psychology in UX" 
+text="Explore how color choices impact user emotions and decision-making in UX design."/>
+
+<Design imgSrc="/designInspire/desInspire03.png" alt="design03" date="August 15, 2023 / UX" h1="Boosting UX with Microinteractions" 
+text="Discover the power of microinteractions in enhancing user experience and engagement."/>
+
+</div>
+<div>
+<GetInTouch />
+</div>
+</div>
+<div>
+  <Footer />
+</div>
     </main>
   );
-}
+};
+export default Home;
