@@ -10,7 +10,7 @@ import Testimonials from "./components/testimonials/testimonial";
 import Design, { DesignInsp } from "./components/designInspriration/dInspire";
 import GetInTouch from "./components/getInTouch/getInTouch";
 import Footer from "./components/footer/footer";
-
+import Head from "next/head";
 const Home: React.FC = () => {
   return (
     <main className="">
@@ -30,7 +30,7 @@ const Home: React.FC = () => {
         <Portfolio />
       </div>
       <div className="bg-[#F7F7F7]">
-        <div className="relative flex justify-evenly flex-wrap gap-10 mx-10">
+        <div className="relative flex justify-evenly flex-wrap gap-10 mx-10 lg:gap-3 lg:mx-3 xl:gap-10 xl:mx-10">
           <MyPortfolio imageSrc="/portfolio/port1.png" text="Port01" h2="Educational Platform" parapgraph="Web Design / Usability Testing" imgSrc="/portfolio/send.png" />
           <MyPortfolio imageSrc="/portfolio/port2.png" text="Port02" h2="Travel App Design" parapgraph="UX Research / App Design " imgSrc="/portfolio/send.png" />
           <MyPortfolio imageSrc="/portfolio/port3.png" text="Port03" h2="Personal Page" parapgraph="Web Design " imgSrc="/portfolio/send.png" />
@@ -52,7 +52,7 @@ const Home: React.FC = () => {
       <div className="bg-[#F7F7F7]">
 
 
-<div className="flex justify-evenly flex-wrap gap-x-5 mx-10">
+<div className="flex justify-evenly flex-wrap gap-x-5 mx-10 lg:gap-x-3 lg:mx-5">
 <Design imgSrc="/designInspire/desInspire01.png" alt="design01" date="August 15, 2023 / UX" h1="Typography Tips for Design Success" 
 text="Dive into the world of web typography and discover how to choose, pair, and optimize fonts for compelling and readable digital designs."/>
 
