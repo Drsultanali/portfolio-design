@@ -6,7 +6,7 @@ export default function CoreSkills() {
                 <h1 className="mx-auto sm:text-4xl text-2xl font-bold my-5 ">
                     Core Design Skills
                 </h1>
-                <p className="sm:mx-auto left-0 md:text-lg sm:text-base text-sm w-3/4 mb-4 ">
+                <p className="sm:mx-auto left-0 md:text-lg sm:text-base text-sm  mb-4 ">
                     I excel in essential design skills, creating visually stunning and functional digital experiences.
                     From UI design to UX research, my passion is to craft effective and memorable digital solutions.
                 </p>

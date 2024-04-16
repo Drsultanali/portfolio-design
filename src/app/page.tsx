@@ -52,7 +52,7 @@ const Home: React.FC = () => {
       <div className="bg-[#F7F7F7]">
 
 
-<div className="flex justify-evenly flex-wrap gap-x-5 mx-10 lg:gap-x-3 lg:mx-5">
+<div className="flex justify-evenly md:justify-start lg:justify-evenly flex-wrap gap-x-5 mx-10 lg:gap-x-3 lg:mx-5">
 <Design imgSrc="/designInspire/desInspire01.png" alt="design01" date="August 15, 2023 / UX" h1="Typography Tips for Design Success" 
 text="Dive into the world of web typography and discover how to choose, pair, and optimize fonts for compelling and readable digital designs."/>
 

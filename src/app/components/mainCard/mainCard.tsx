@@ -1,8 +1,8 @@
 import Image from "next/image"
 export default function Maincard() {
     return (
-        <div className="mx-14 flex xl:justify-between  justify-start flex-wrap ">
-            <div className=" font-Montserrat  md:w-[450px] w-[400px]">
+        <div className="mx-14 flex xl:justify-between gap-x-2 justify-start flex-wrap ">
+            <div className=" font-Montserrat md:w-[300px] lg:w-[370px] xl:w-[500px] w-[400px]">
                 <h2 className="text-xl sm:text-2xl ">
                     UX Designer
                 </h2>
@@ -25,7 +25,7 @@ export default function Maincard() {
                 </div>
             </div>
             <div className="">
-                <Image className="xl:w-[600px] lg:[530px] xl:h-[400px] sm:w-[450px] sm:h-[350px] h-[300px] " src="/UXD.png" alt="UX" width={400} height={400} />
+                <Image className="xl:w-[700px]  md:mt-10 xl:mt-0 md:w-[330px] lg:w-[500px] xl:h-[400px] sm:w-[450px] sm:h-[300px] h-[250px] w-[400px] " src="/Ui.png" alt="UX" width={400} height={400} />
             </div>
         </div>
     )
