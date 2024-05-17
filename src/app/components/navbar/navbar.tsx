@@ -13,8 +13,8 @@ const Nav: React.FC = () => {
     const [showPagesList, setPagesList] = useState(false);
 
     return (
-        <div className="bg-[#FFD4D0]">
-            <div className="flex items-center justify-between h-20 mx-14 ">
+        <div className="bg-[#FFD4D0] ">
+            <div className="flex items-center justify-between h-20 px-14 max-w-[1500px] mx-auto ">
             
                 <div>
                     <a onClick={() => scrollToSection('home')} className="hover:cursor-pointer">

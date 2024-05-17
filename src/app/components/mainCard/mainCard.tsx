@@ -1,7 +1,7 @@
 import Image from "next/image"
 export default function Maincard() {
     return (
-        <div className="mx-14 flex xl:justify-between gap-x-2 justify-start flex-wrap ">
+        <div className="px-14 flex xl:justify-between gap-x-2 justify-start flex-wrap max-w-[1500px] mx-auto ">
             <div className=" font-Montserrat md:w-[300px] lg:w-[370px] xl:w-[500px] w-[400px]">
                 <h2 className="text-xl sm:text-2xl ">
                     UX Designer

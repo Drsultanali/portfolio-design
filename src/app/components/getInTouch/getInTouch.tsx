@@ -2,7 +2,7 @@ import Image from "next/image"
 export default function GetInTouch() {
     return (
         <div className="bg-[#FFD4D0]  ">
-            <div className="gap-x-10 font-Montserrat max-w-screen container flex lg:flex-row items-center sm:justify-center sm:items-center  lg:justify-normal flex-col md:w-full flex-wrap">
+            <div className="gap-x-10 font-Montserrat max-w-screen container flex lg:flex-row items-center sm:justify-center sm:items-center  lg:justify-normal flex-col md:w-full flex-wrap max-w-[1500px] xl:mx-auto">
                 <div className=" flex items-center">
                     <Image className=" w-14 h-48 lg:block hidden " src="/background/Background03.png" alt="Background03" width={100} height={100} />
                 </div>
